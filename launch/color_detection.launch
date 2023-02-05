@@ -1,0 +1,14 @@
+<!--xml-->
+<launch>
+  
+  <arg name="rosbot_pro" default="true " />
+  <arg name="use_gazebo" default ="false " />
+  <include file="$(find astra_launch)/launch/astra.launch"/>
+  <node pkg="image_view" type="image_view" name="image_view">
+  <remap from="/image" to="/camera/rgb/image_raw"/>
+  </node>
+  
+  <node name="color_detection" pkg="ros_color_detection" type="color_detection">
+	</node>
+  
+</launch>
