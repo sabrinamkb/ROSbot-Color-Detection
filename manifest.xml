@@ -14,7 +14,7 @@
   <depend package="rviz"/>
   <depend package="opencv2"/>
   <depend package="cv_bridge"/>
-  <depend package="uvc_camera"/>
+  <depend package="astra_launch"/>
   <depend package="sensor_msgs"/>
 
 </package>
